@@ -1,64 +1,268 @@
-/* Configuración general */
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.actions .btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.login {
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    background-color: transparent;
+}
+
+.btn.login:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn.primary {
+    background-color: #3bb54a;
+    color: #fff;
+    border: none;
+}
+
+.btn.primary:hover {
+    background-color: #2d8b35;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-text strong {
+    color: #000;
+}
+
+.email-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.email-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.email-form button {
+    background: linear-gradient(90deg, #3bb54a, #7bc043);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.email-form button:hover {
+    background: linear-gradient(90deg, #2d8b35, #5fa531);
+}
+
+/* Hero Image */
+.hero-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+/* General */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 50px 20px;
     text-align: center;
-    background-color: #f4f4f4;
 }
 
-/* Contenedor principal */
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+/* Features Section */
+.features .feature-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-/* Estilo del encabezado */
-h1 {
-    color: #333;
+.feature {
+    max-width: 250px;
+    text-align: center;
 }
 
-/* Estilo de los párrafos */
-p {
-    color: #555;
-    line-height: 1.6;
+/* Testimonials Section */
+.testimonials .testimonial-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-/* Botón de llamada a la acción */
-.cta-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
+.testimonial {
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #6dcf81, #3bb54a);
     color: #fff;
-    background: #007BFF;
+}
+
+.footer-info, .footer-legal, .footer-subscribe {
+    flex: 1;
+    padding: 10px;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, #a1de59, #34c759);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(90deg, #8cc943, #28a745);
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(90deg, #a1de59, #34c759);
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 20px;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  .links, .legal {
+    color: white;
+  }
+  
+  .links ul, .legal ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li, .legal li {
+    margin-bottom: 10px;
+  }
+  
+  .links a, .legal a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .links a:hover, .legal a:hover {
+    text-decoration: underline;
+  }
+  
+  .newsletter input {
+    width: 70%;
+    padding: 10px;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .newsletter button {
+    background: white;
+    color: #34c759;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.cta-btn:hover {
-    background: #0056b3;
-}
-
-/* Sección de beneficios */
-.benefits {
-    text-align: left;
-    margin-top: 30px;
-}
-
-.benefit-item {
-    margin: 10px 0;
-}
-
-/* Pie de página */
-footer {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #777;
-}
+    font-size: 1rem;
+  }
+  
+  .newsletter button:hover {
+    background: #f1f1f1;
+  }
