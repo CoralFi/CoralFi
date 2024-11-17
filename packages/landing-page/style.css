@@ -1,0 +1,64 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo del encabezado */
+h1 {
+    color: #333;
+}
+
+/* Estilo de los párrafos */
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Botón de llamada a la acción */
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: #0056b3;
+}
+
+/* Sección de beneficios */
+.benefits {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.benefit-item {
+    margin: 10px 0;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
