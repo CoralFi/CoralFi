@@ -4,37 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>CoralFi Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/coral.png" type="image/png">
+  <title>CoralFi Finance</title>
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
+    <div class="nav-logo">
     <img src="image/coral.png" alt="CoralFi Logo" class="logo">
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Our Team</a></li>
-    </ul>
-    <div class="actions">
-      <a href="#" class="btn login">Login</a>
-      <a href="#" class="btn primary">Get Started</a>
-    </div>
+   
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Tu dinero, sin límites. Todo en un solo lugar.</h1>
-      <p>
-        Con CoralFi, une cripto y finanzas tradicionales. Gestiona todo desde una
-        app única, intuitiva y segura, para que tus finanzas fluyan sin barreras.
-        <strong>¡Tu dinero, en tus manos!</strong>
-      </p>
-      <form class="email-form">
-        <input type="email" placeholder="Escribe tu e-mail">
-        <button type="submit" class="btn primary">Unite a la lista de espera</button>
-      </form>
+        <div class="hero-title">
+            <h1>El puente entre cripto y tus negocios. Todo en Coral.</h1>
+          </div>
+          <div class="hero-description">
+              <p>
+                  Con CoralFi, une cripto y finanzas tradicionales. Gestiona todo desde una
+                  app única, intuitiva y segura, para que tus finanzas fluyan sin barreras.
+              </p>
+              <span><strong>¡Tu dinero, en tus manos!</strong></span>
+          </div>
+          <div class="subscription-container">
+            <input type="email" placeholder="Escribe tu e-mail" class="email-input" />
+            <button class="subscribe-button">Unite a la lista de espera</button>
+          </div>
     </div>
+    
     <div class="hero-image">
       <img src="image/phone.png" alt="App CoralFi">
     </div>
@@ -42,8 +42,10 @@
 
   <!-- Features Section -->
   <section class="features">
-    <h2>Sin fronteras, sin esperas, sin complicaciones</h2>
-    <p>Todo en un solo lugar</p>
+    <div class="features-title">
+        <h2>Sin fronteras, sin esperas, sin complicaciones</h2>
+        <p>Todo en un solo lugar</p>
+    </div>
     <div class="feature-list">
       <div class="feature">
         <img src="image/cripto.png" alt="Cripto sin complicaciones">
@@ -68,45 +70,43 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>Nuestros clientes CoralFi</h2>
-    <p>Transforma tus cripto en lo que necesitas, cuando lo necesitas.</p>
-    <div class="testimonial-list">
-      <div class="testimonial">
-        <img src="client1.png" alt="Diego Ramirez">
-        <p>“Antes tenía que esperar días para recibir pagos internacionales. Con CoralFi, cobro en minutos. ¡Es rápido y seguro!”</p>
-        <h4>Diego Ramirez</h4>
-        <span>La Paz, Bolivia</span>
+  <!-- Founders Section -->
+  <section class="founders">
+    <h2 class="founders-title">Founders</h2>
+    <div class="founders-container">
+      <div class="founder">
+        <img src="image/tobias.png" alt="Tobias Muchut" class="founder-image">
+        <h3 class="founder-name">Tobias Muchut</h3>
+        <p class="founder-role">COO</p>
+        <p class="founder-subtitle">Compliance Officer</p>
       </div>
-      <div class="testimonial">
-        <img src="client2.png" alt="Lais Castinho">
-        <p>“Como pequeño negocio, recibir pagos en cripto era un reto. CoralFi ha hecho todo mucho más sencillo.”</p>
-        <h4>Lais Castinho</h4>
-        <span>Florianópolis, Brasil</span>
-      </div>
-      <div class="testimonial">
-        <img src="client3.png" alt="Victor Mansilla">
-        <p>“Siempre busco formas seguras de proteger mis fondos. CoralFi me ayuda a convertir mis criptoactivos a monedas locales rápidamente.”</p>
-        <h4>Victor Mansilla</h4>
-        <span>Córdoba, Argentina</span>
+      <div class="founder">
+        <img src="image/lean.png" alt="Leandro Conti" class="founder-image">
+        <h3 class="founder-name">Leandro Conti</h3>
+        <p class="founder-role">CEO</p>
+        <p class="founder-subtitle">Product Manager</p>
       </div>
     </div>
   </section>
-
+  
   <!-- Call to Action Section -->
   <section class="main-section">
-    <h1>¿Listo para llevar tus finanzas al siguiente nivel?</h1>
-    <p>
-      Únete a la comunidad de usuarios de CoralFi que ya están disfrutando de la libertad financiera, transformando sus pagos en cripto a USDT y convirtiéndolos a su moneda local al instante. ¡No esperes más para hacer tus transacciones de manera rápida y segura!
-    </p>
-    <button class="cta-button">Descarga la Web App</button>
+    <div class="main-section-text">
+        <h1>¿Listo para llevar tus finanzas al siguiente nivel?</h1>
+        <p>
+          Únete a la comunidad de usuarios de CoralFi que ya están disfrutando de la libertad financiera, transformando sus pagos en cripto a USDT y convirtiéndolos a su moneda local al instante. ¡No esperes más para hacer tus transacciones de manera rápida y segura!
+        </p>
+    </div>
+    <div class="subscription-container">
+      <input type="email" placeholder="Escribe tu e-mail" class="email-input" />
+      <button class="subscribe-button">Unite a la lista de espera</button>
+    </div>
   </section>
 
   <footer>
     <div class="footer-content">
       <div class="logo"> 
-        <img src="logo.png" alt="CoralFi logo">
+        <img src="image/coral-white.png" alt="CoralFi logo">
       </div>
       <div class="links">
         <h4>Más información</h4>
@@ -122,9 +122,12 @@
           <li><a href="#">Términos y Condiciones</a></li>
         </ul>
       </div>
-      <div class="newsletter">
-        <input type="email" placeholder="Escribe tu e-mail">
-        <button>Únete a la lista de espera</button>
+      <div class="contacto-extra">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:info@coralfi.com">info@coralfi.com</a></li>
+          <li><a href="tel:+123456789">+123 456 789</a></li>
+        </ul>
       </div>
     </div>
   </footer>
